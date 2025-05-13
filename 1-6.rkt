@@ -12,17 +12,4 @@
 
 (define (squareRoot x) (sqaureRootItr 1 x))
 
-(define (cubeImproveGuess guess radicand) (/ (+ (/ radicand (* guess guess)) (* 2 guess)) 3))
-
-(define (cubeGoodEnough guess radicand) (> 0.01 (abs (- 1 (/ (cubeImproveGuess guess radicand) guess)))))
-
-(define (cubeRootItr guess radicand)(
-    if (cubeGoodEnough guess radicand) guess (cubeRootItr (cubeImproveGuess guess radicand) radicand)
-))
-
-(define (cubeRoot x) (cubeRootItr 1 x))
-
-(cubeRoot 8)
-
-
-
+(squareRoot 950)
