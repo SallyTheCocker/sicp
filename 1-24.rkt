@@ -59,4 +59,4 @@
          (fast-prime? n (- times 1)))
         (else false)))
 
-(timed-prime-test 561)
+(find3primes 558)
